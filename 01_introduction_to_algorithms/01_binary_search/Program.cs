@@ -8,8 +8,14 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            var myList = new List<int> { 1, 3, 5, 7, 9 };
+            //var myList = new List<int> { 1, 3, 5, 7, 9 };
+            //Console.WriteLine(BinarySearch(myList, 3)); // => 1
+            //Console.WriteLine(BinarySearch(myList, -1)); // => null gets printed as an empty string
+
+            var myList = new List<int> { 1, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}; //16 itens
+            Console.WriteLine(BinarySearch(myList, 19)); // => 14
             Console.WriteLine(BinarySearch(myList, 3)); // => 1
+            Console.WriteLine(BinarySearch(myList, 10)); // => 5
             Console.WriteLine(BinarySearch(myList, -1)); // => null gets printed as an empty string
         }
 
